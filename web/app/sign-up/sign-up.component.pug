@@ -11,6 +11,9 @@
             label Password
             input(type="password" class="form-control" formControlName="password" required)
             .form-control-feedback('*ngIf'!="password.errors && (password.dirty || password.touched)")
+
+                // TODO: add all texts for password validation
                 p('*ngIf'!="password.errors.required") Password is required
                 p('*ngIf'!="password.errors.minlength") The min length is 8
+                p('*ngIf'!="password.errors.lowerCaseLetter") Password must contain lower case letter
                 pre {{password.errors | json}}

@@ -3,36 +3,36 @@ import { FormControl, Validators, FormBuilder, FormGroup } from '@angular/forms'
 import { ValidatePassword } from "../validators/password.validator";
 
 @Component({
-  selector: 'app-sign-up',
-  templateUrl: './sign-up.component.html'
+    selector: 'app-sign-up',
+    templateUrl: './sign-up.component.html'
 })
 export class SignUpComponent implements OnInit {
 
-  signUpForm: FormGroup;
-  email: FormControl;
-  password: FormControl;
+    signUpForm: FormGroup;
+    email: FormControl;
+    password: FormControl;
 
-  ngOnInit() {
-    this.createFormControls();
-    this.createForm();
-  }
+    ngOnInit() {
+        this.createFormControls();
+        this.createForm();
+    }
 
-  createFormControls() {
-    this.email = new FormControl('', [
-      Validators.required,
-      Validators.pattern("[^ @]*@[^ @]*")
-    ]);
-    this.password = new FormControl('', [
-      Validators.required,
-      Validators.minLength(8),
-      ValidatePassword,
-    ]);
-  }
+    createFormControls() {
+        this.email = new FormControl('', [
+            Validators.required,
+            Validators.pattern("[^ @]*@[^ @]*")
+        ]);
+        this.password = new FormControl('', [
+            Validators.required,
+            Validators.minLength(8),
+            ValidatePassword,
+        ]);
+    }
 
-  createForm() {
-    this.signUpForm = new FormGroup({
-      email: this.email,
-      password: this.password,
-    });
-  }
+    createForm() {
+        this.signUpForm = new FormGroup({
+            email: this.email,
+            password: this.password,
+        });
+    }
 }
