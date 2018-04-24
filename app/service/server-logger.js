@@ -9,7 +9,7 @@ const logFormat = winston.format.printf(info => {
     return `${info.timestamp} ${info.message}`;
 });
 
-let format =  winston.format.combine(
+let format = winston.format.combine(
     winston.format.label({ label: 'app' }),
     winston.format.timestamp(),
     winston.format.simple(),

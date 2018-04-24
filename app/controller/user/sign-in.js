@@ -2,14 +2,14 @@ const core = require('../../core');
 
 module.exports = (req, res) => {
 
-    core.model.user.findOne({email: req.body.email}, 'email password role', (err, user) => {
+    core.model.user.findOne({ email: req.body.email }, 'email password role', (err, user) => {
 
-        if(err) {
+        if (err) {
             core.service.logger.error(err);
             return res.redirect('/');
         }
 
-        if(null === user) {
+        if (null === user) {
             return res.render('home/index', {
                 errors: {
                     form: {
@@ -24,7 +24,7 @@ module.exports = (req, res) => {
         }
 
         core.service.bcrypt.compare(req.body.password, user.password, (err, result) => {
-            if(err || !result) {
+            if (err || !result) {
                 core.service.logger.error(err);
                 return res.redirect('/');
             }

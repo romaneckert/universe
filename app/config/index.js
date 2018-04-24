@@ -1,8 +1,8 @@
 let parameters = require('./parameters');
 
 // override parameters with environment vars if exists
-for(let key in parameters) {
-    if('string' === typeof process.env[key] && process.env[key].length > 0) {
+for (let key in parameters) {
+    if ('string' === typeof process.env[key] && process.env[key].length > 0) {
         parameters[key] = process.env[key];
     }
 }
@@ -15,8 +15,8 @@ let requiredParameters = [
     'USER_TOKEN_EXPIRES'
 ];
 
-for(let key of requiredParameters) {
-    if('undefined' === typeof parameters[key]) {
+for (let key of requiredParameters) {
+    if ('undefined' === typeof parameters[key]) {
         throw new Error('parameter "' + key + '" does not exists');
     }
 }

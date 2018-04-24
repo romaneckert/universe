@@ -1,7 +1,7 @@
 const core = require('../../core');
 
 module.exports = (req, res) => {
-    if(req.body.password !== req.body.passwordRepeat) {
+    if (req.body.password !== req.body.passwordRepeat) {
         return res.render('home/index', {
             errors: {
                 form: {
@@ -24,7 +24,7 @@ module.exports = (req, res) => {
 
     core.service.bcrypt.hash(req.body.password, 10, (err, hash) => {
 
-        if(err) {
+        if (err) {
             console.log(err);
             return res.redirect('/');
         }
@@ -36,7 +36,7 @@ module.exports = (req, res) => {
         });
 
         user.save((err) => {
-            if(err) {
+            if (err) {
                 return res.render('home/index', {
                     errors: {
                         form: {
@@ -47,7 +47,7 @@ module.exports = (req, res) => {
                     }
                 });
             }
-            core.service.accessToken.addCookie(user,res);
+            core.service.accessToken.addCookie(user, res);
             return res.redirect('/user/overview/');
         });
     });
