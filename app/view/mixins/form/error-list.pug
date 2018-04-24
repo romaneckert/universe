@@ -1,0 +1,12 @@
+mixin errorList(name)
+
+    -
+        if(errors && errors.form && errors.form[name] && errors.form[name].errors) {
+            var formErrors = errors.form[name].errors;
+        }
+
+    if formErrors
+        ul
+            each error in formErrors
+                li #{error}
+

@@ -1,0 +1,12 @@
+include error-list
+
+mixin form()
+
+    form(method='POST' action=attributes.action name=attributes.name)
+
+        +errorList(attributes.name)
+
+        if block
+            block
+
+

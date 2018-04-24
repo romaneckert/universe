@@ -1,0 +1,16 @@
+include mixins/form/form
+include mixins/form/form-input
+
+doctype html
+html
+    head
+        block head
+            meta(charset="utf-8")
+            meta(http-equiv="x-ua-compatible" content="ie=edge")
+            meta(name="viewport" content="width=device-width, initial-scale=1")
+
+    body
+        header
+            if user
+                a(href="/user/sign-out") sign out
+        block content

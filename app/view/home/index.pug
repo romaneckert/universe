@@ -1,0 +1,29 @@
+extends ../layout.pug
+
+block append head
+    title Home
+    meta(name="description" content="Home")
+
+block content
+
+    +form(name='signUp' action='/user/sign-up/')
+
+        div.form-group
+            label(for='sign-up-email') Email:
+            input#sign-up-email.form-control(type='email' placeholder='name@email.com' name='email')
+        div.form-group
+            label(for='sign-up-password') Password:
+            input#sign-up-password.form-control(type='password' name='password')
+        div.form-group
+            label(for='sign-up-password-repeat') Password:
+            input#sign-up-password-repeat.form-control(type='password' name='passwordRepeat')
+        button.btn.btn-primary(type='submit') Sign up
+
+    +form('signIn', '/user/sign-in/')
+
+        +formInput(type="email" name='email', label='Email:', placeholder='name@email.com')
+
+        div.form-group
+            label(for='sign-in-password') Password:
+            input#sign-in-password.form-control(type='password' name='password')
+        button.btn.btn-primary(type='submit') Sign in
