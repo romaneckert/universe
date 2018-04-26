@@ -8,7 +8,8 @@
         "build": "ng build --prod --build-optimizer && app/index.js",
         "test": "ng test",
         "lint": "ng lint",
-        "e2e": "ng e2e"
+        "e2e": "ng e2e",
+        "i18n": "ng xi18n --outputPath web/locale --outFile messages.xlf"
     },
     "private": true,
     "dependencies": {
@@ -40,7 +41,9 @@
         "@angular/cli": "~1.7.4",
         "@angular/compiler-cli": "^5.2.10",
         "@angular/language-service": "^5.2.10",
+        "del": "^3.0.0",
         "gulp": "4.0",
+        "gulp-clean": "^0.4.0",
         "gulp-pug": "^4.0.1",
         "typescript": "~2.5.3"
     }

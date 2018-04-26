@@ -1,14 +1,20 @@
 const gulp = require('gulp');
 const gulpPug = require('gulp-pug');
+const del = require('del');
 
-function pug() {
+gulp.task('clean', (cb) => {
+    del.sync(['./web/**/*.html']);
+    cb();
+});
+
+gulp.task('pug', () => {
     return gulp.src('./web/**/*.pug')
         .pipe(gulpPug({
             pretty: true
         }))
-        .pipe(gulp.dest('./web/'))
-}
+        .pipe(gulp.dest('./web/'));
+});
 
-gulp.watch('./web/**/*.pug', pug);
+gulp.watch('./web/**/*.pug', gulp.series('pug'));
 
-gulp.task('default', gulp.series(pug));
+gulp.task('default', gulp.series('clean', 'pug'));
