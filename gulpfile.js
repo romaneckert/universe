@@ -15,6 +15,8 @@ gulp.task('pug', () => {
         .pipe(gulp.dest('./web/'));
 });
 
-gulp.watch('./web/**/*.pug', gulp.series('pug'));
+gulp.task('watch', () => {
+    gulp.watch('./web/**/*.pug', gulp.series('pug'));
+});
 
-gulp.task('default', gulp.series('clean', 'pug'));
+gulp.task('default', gulp.series('clean', 'pug', 'watch'));
