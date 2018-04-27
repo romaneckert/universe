@@ -1,30 +1,61 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<xliff version="1.2"
-    xmlns="urn:oasis:names:tc:xliff:document:1.2">
-    <file source-language="en" datatype="plaintext" original="ng2.template">
-        <body>
-            <trans-unit id="general.imprint" datatype="html">
-                <source>Imprint</source>
-                <target>Impressum</target>
-                <context-group purpose="location">
-                    <context context-type="sourcefile">app/header/header.component.ts</context>
-                    <context context-type="linenumber">5</context>
-                </context-group>
-            </trans-unit>
-            <trans-unit id="validator.password.required" datatype="html">
-                <target>Bitte geben Sie das Passwort ein.</target>
-                <context-group purpose="location">
-                    <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
-                    <context context-type="linenumber">17</context>
-                </context-group>
-            </trans-unit>
-            <trans-unit id="validator.password.minlength" datatype="html">
-                <target>Die Mindestlänge für ein Passwort beträgt 8 Zeichen.</target>
-                <context-group purpose="location">
-                    <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
-                    <context context-type="linenumber">18</context>
-                </context-group>
-            </trans-unit>
-        </body>
-    </file>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="general.german" datatype="html">
+        <source>Home</source>
+        <target>Home</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/header/header.component.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="general.imprint" datatype="html">
+        <source>Imprint</source>
+        <target>Impressum</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/header/header.component.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="general.email" datatype="html">
+        <source>Email</source>
+        <target>Email</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="general.password" datatype="html">
+        <source>Password</source>
+        <target>Passwort</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="validator.password.required" datatype="html">
+        <source>Password is required</source>
+        <target>Bitte geben Sie Ihr Passwort ein.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="validator.password.minLength" datatype="html">
+        <source>Die Mindestlänge für ein Passwort beträgt 8 Zeichen.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="validator.password.lowerCaseLetter" datatype="html">
+        <source>Das Passwort muss mindestens ein Kleinbuchstaben enthalten.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
