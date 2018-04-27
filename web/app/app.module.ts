@@ -25,11 +25,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
         ImprintComponent,
         SignUpComponent
     ],
-    providers: [
-        {
-            provide: LOCALE_ID, useValue: 'de'
-        }
-    ],
     bootstrap: [AppComponent]
 })
 

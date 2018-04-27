@@ -29,7 +29,11 @@ module.exports = {
         controller: require('../controller/user/password-reset'),
         roles: ['admin', 'user']
     },
-    '*': {
+    '/:country/:language/*': {
+        method: 'get',
+        controller: require('../controller/web/locale')
+    },
+    '/': {
         method: 'get',
         controller: require('../controller/web/index')
     }

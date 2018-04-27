@@ -1,21 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="en" datatype="plaintext" original="ng2.template">
-    <body>
-      <trans-unit id="validator.password.required" datatype="html">
-        <source>Password is required</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
-          <context context-type="linenumber">17</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="validator.password.minlength" datatype="html">
-        <source>The min length is 8</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
-          <context context-type="linenumber">18</context>
-        </context-group>
-      </trans-unit>
-    </body>
-  </file>
+<xliff version="1.2"
+    xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="ng2.template">
+        <body>
+            <trans-unit id="general.imprint" datatype="html">
+                <source>Imprint</source>
+                <target>Impressum</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/header/header.component.ts</context>
+                    <context context-type="linenumber">5</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="validator.password.required" datatype="html">
+                <target>Bitte geben Sie das Passwort ein.</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
+                    <context context-type="linenumber">17</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="validator.password.minlength" datatype="html">
+                <target>Die Mindestlänge für ein Passwort beträgt 8 Zeichen.</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
+                    <context context-type="linenumber">18</context>
+                </context-group>
+            </trans-unit>
+        </body>
+    </file>
 </xliff>

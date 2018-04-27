@@ -46,6 +46,7 @@ router(app);
 // register error handler
 app.use(errorHandler);
 
+// register not found handler
 app.use(notFoundHandler);
 
 // create https server

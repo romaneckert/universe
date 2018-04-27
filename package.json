@@ -5,7 +5,9 @@
     "scripts": {
         "ng": "ng",
         "start": "ng serve --open",
-        "build": "ng build --prod --build-optimizer && app/index.js",
+        "build": "npm run build-de-en && npm run build-de-de && app/index.js",
+        "build-de-de": "ng build --prod --build-optimizer --aot --output-path public/de/de --base-href /de/de/ --locale de --i18n-format xlf --i18n-file web/locale/messages.de.xlf --missing-translation error ",
+        "build-de-en": "ng build --prod --build-optimizer --aot --output-path public/de/en --base-href /de/en/ --locale en ",
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e",

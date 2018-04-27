@@ -26,7 +26,13 @@ const config = {
     serverPort: parseInt(parameters.SERVER_PORT),
     secret: parameters.SECRET,
     mongoDB: parameters.MONGO_DB,
-    userTokenExpires: parseInt(parameters.USER_TOKEN_EXPIRES)
+    userTokenExpires: parseInt(parameters.USER_TOKEN_EXPIRES),
+    locales : {
+        de: {
+            de : {},
+            en : {}
+        }
+    }
 }
 
 module.exports = config;

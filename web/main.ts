@@ -1,4 +1,4 @@
-import { enableProdMode, MissingTranslationStrategy } from '@angular/core';
+import { enableProdMode} from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { AppModule } from './app/app.module';
@@ -8,6 +8,8 @@ if (environment.production) {
     enableProdMode();
 }
 
-platformBrowserDynamic().bootstrapModule(AppModule, {
-    missingTranslation: MissingTranslationStrategy.Error,
-}).catch(err => console.log(err));
+declare const require;
+
+const germanTranslations = require(`raw-loader!./locale/messages.de.xlf`);
+
+platformBrowserDynamic().bootstrapModule(AppModule).catch(err => console.log(err));
