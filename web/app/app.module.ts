@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
 
 import { routes } from "./app.routes";
 
@@ -24,6 +24,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
         HomeComponent,
         ImprintComponent,
         SignUpComponent
+    ],
+    providers: [
+        {
+            provide: LOCALE_ID, useValue: 'de'
+        }
     ],
     bootstrap: [AppComponent]
 })
