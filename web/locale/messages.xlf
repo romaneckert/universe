@@ -1,70 +1,71 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="en" datatype="plaintext" original="ng2.template">
-    <body>
-      <trans-unit id="general.home" datatype="html">
-        <source>Home</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/header/header.component.ts</context>
-          <context context-type="linenumber">10</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="general.imprint" datatype="html">
-        <source>Imprint</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/header/header.component.ts</context>
-          <context context-type="linenumber">10</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="general.email" datatype="html">
-        <source>Email</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
-          <context context-type="linenumber">5</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="validator.email.required" datatype="html">
-        <source>Please fill in your email address.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
-          <context context-type="linenumber">8</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="validator.email.pattern" datatype="html">
-        <source>The email address must contain at least the @ character.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
-          <context context-type="linenumber">9</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="general.password" datatype="html">
-        <source>Password</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
-          <context context-type="linenumber">13</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="validator.password.required" datatype="html">
-        <source>Please fill in your password.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
-          <context context-type="linenumber">17</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="validator.password.minLength" datatype="html">
-        <source>The min length of your password is 8.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
-          <context context-type="linenumber">18</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="validator.password.lowerCaseLetter" datatype="html">
-        <source>Your password must contain a lower case letter.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
-          <context context-type="linenumber">19</context>
-        </context-group>
-      </trans-unit>
-    </body>
-  </file>
+<xliff version="1.2"
+    xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="ng2.template">
+        <body>
+            <trans-unit id="general.home" datatype="html">
+                <source>Home</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/header/header.component.ts</context>
+                    <context context-type="linenumber">10</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="general.imprint" datatype="html">
+                <source>Imprint</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/header/header.component.ts</context>
+                    <context context-type="linenumber">10</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="general.email" datatype="html">
+                <source>Email</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
+                    <context context-type="linenumber">5</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="validator.email.required" datatype="html">
+                <source>Please fill in your email address.</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
+                    <context context-type="linenumber">8</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="validator.email.pattern" datatype="html">
+                <source>The email address must contain at least the @ character.</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
+                    <context context-type="linenumber">9</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="general.password" datatype="html">
+                <source>Password</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
+                    <context context-type="linenumber">13</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="validator.password.required" datatype="html">
+                <source>Please fill in your password.</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
+                    <context context-type="linenumber">17</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="validator.password.minLength" datatype="html">
+                <source>The min length of your password is 8.</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
+                    <context context-type="linenumber">18</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="validator.password.lowerCaseLetter" datatype="html">
+                <source>Your password must contain a lower case letter.</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
+                    <context context-type="linenumber">19</context>
+                </context-group>
+            </trans-unit>
+        </body>
+    </file>
 </xliff>
