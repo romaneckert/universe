@@ -36,28 +36,44 @@
         <target state="final">Password</target>
       </trans-unit>
       <trans-unit id="validator.password.required" datatype="html">
-        <source>Password is required</source>
+        <source>Please fill in your password.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
           <context context-type="linenumber">17</context>
         </context-group>
-        <target state="final">Password is required</target>
+        <target state="final">Please fill in your password.</target>
       </trans-unit>
       <trans-unit id="validator.password.minLength" datatype="html">
-        <source>The min length is 8</source>
+        <source>The min length of your password is 8.</source>
+        <target state="final">The min length of your password is 8.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
-          <context context-type="linenuƒƒmber">18</context>
+          <context context-type="linenumber">18</context>
         </context-group>
-        <target state="final">The min length is 8</target>
       </trans-unit>
       <trans-unit id="validator.password.lowerCaseLetter" datatype="html">
-        <source>Password must contain lower case letter</source>
+        <source>Your password must contain a lower case letter.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
           <context context-type="linenumber">19</context>
         </context-group>
-        <target state="final">Password must contain lower case letter</target>
+        <target state="final">Your password must contain a lower case letter.</target>
+      </trans-unit>
+      <trans-unit id="validator.email.required" datatype="html">
+        <source>Please fill in your email address.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <target state="final">Please fill in your email address.</target>
+      </trans-unit>
+      <trans-unit id="validator.email.pattern" datatype="html">
+        <source>The email address must contain at least the @ character.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <target state="final">The email address must contain at least the @ character.</target>
       </trans-unit>
     </body>
   </file>

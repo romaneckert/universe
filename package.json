@@ -8,11 +8,10 @@
         "build": "gulp pug && npm run build-de-en && npm run build-de-de && app/index.js",
         "build-de-de": "ng build --prod --build-optimizer --aot --output-path public/de/de --base-href /de/de/ --locale de --i18n-format xlf --i18n-file web/locale/messages.de.xlf --missing-translation error ",
         "build-de-en": "ng build --prod --build-optimizer --aot --output-path public/de/en --base-href /de/en/ --locale en ",
-        "extract-i18n": "ng xi18n --output-path web/locale && xliffmerge --profile xliffmerge.json",
+        "i18n": "ng xi18n --output-path web/locale && xliffmerge --profile xliffmerge.json",
         "test": "ng test",
         "lint": "ng lint",
-        "e2e": "ng e2e",
-        "i18n": "ng xi18n --outputPath web/locale --outFile messages.xlf --i18nFormat=xlf"
+        "e2e": "ng e2e"
     },
     "private": true,
     "dependencies": {

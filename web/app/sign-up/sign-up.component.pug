@@ -4,15 +4,15 @@
             label(i18n="@@general.email") Email
             input(type="email" class="form-control" formControlName="email" required)
             .form-control-feedback('*ngIf'!="email.errors && (email.dirty || email.touched)")
-                p('*ngIf'!="email.errors.required" i18n="@@validator.email.required") Please fill in your email address
-                p('*ngIf'!="email.errors.pattern") The email address must contain at least the @ character
+                p('*ngIf'!="email.errors.required" i18n="@@validator.email.required") Please fill in your email address.
+                p('*ngIf'!="email.errors.pattern" i18n="@@validator.email.pattern") The email address must contain at least the @ character.
         .form-group('[ngClass]'!="{'has-danger': password.invalid && (password.dirty || password.touched),'has-success': password.valid && (password.dirty || password.touched)}")
             label(i18n="@@general.password") Password
             input(type="password" class="form-control" formControlName="password" required)
             .form-control-feedback('*ngIf'!="password.errors && (password.dirty || password.touched)")
 
                 // TODO: add all texts for password validation
-                p('*ngIf'!="password.errors.required" i18n="@@validator.password.required") Password is required
-                p('*ngIf'!="password.errors.minlength" i18n="@@validator.password.minLength") The min length is 8
-                p('*ngIf'!="password.errors.lowerCaseLetter" i18n="@@validator.password.lowerCaseLetter") Password must contain lower case letter
+                p('*ngIf'!="password.errors.required" i18n="@@validator.password.required") Please fill in your password.
+                p('*ngIf'!="password.errors.minlength" i18n="@@validator.password.minLength") The min length of your password is 8.
+                p('*ngIf'!="password.errors.lowerCaseLetter" i18n="@@validator.password.lowerCaseLetter") Your password must contain a lower case letter.
                 pre {{password.errors | json}}
