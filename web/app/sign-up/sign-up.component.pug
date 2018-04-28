@@ -4,7 +4,7 @@
             label(i18n="@@general.email") Email
             input(type="email" class="form-control" formControlName="email" required)
             .form-control-feedback('*ngIf'!="email.errors && (email.dirty || email.touched)")
-                p('*ngIf'!="email.errors.required") Email is required
+                p('*ngIf'!="email.errors.required" i18n="@@validator.email.required") Please fill in your email address
                 p('*ngIf'!="email.errors.pattern") The email address must contain at least the @ character
         .form-group('[ngClass]'!="{'has-danger': password.invalid && (password.dirty || password.touched),'has-success': password.valid && (password.dirty || password.touched)}")
             label(i18n="@@general.password") Password

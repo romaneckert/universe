@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" 
   xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="en" datatype="plaintext" original="ng2.template">
+  <file source-language="en" datatype="plaintext" original="ng2.template" target-language="en">
     <body>
       <trans-unit id="general.home" datatype="html">
         <source>Home</source>
@@ -9,6 +9,7 @@
           <context context-type="sourcefile">app/header/header.component.ts</context>
           <context context-type="linenumber">10</context>
         </context-group>
+        <target state="final">Home</target>
       </trans-unit>
       <trans-unit id="general.imprint" datatype="html">
         <source>Imprint</source>
@@ -16,6 +17,7 @@
           <context context-type="sourcefile">app/header/header.component.ts</context>
           <context context-type="linenumber">10</context>
         </context-group>
+        <target state="final">Imprint</target>
       </trans-unit>
       <trans-unit id="general.email" datatype="html">
         <source>Email</source>
@@ -23,6 +25,7 @@
           <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
           <context context-type="linenumber">5</context>
         </context-group>
+        <target state="final">Email</target>
       </trans-unit>
       <trans-unit id="general.password" datatype="html">
         <source>Password</source>
@@ -30,6 +33,7 @@
           <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
           <context context-type="linenumber">13</context>
         </context-group>
+        <target state="final">Password</target>
       </trans-unit>
       <trans-unit id="validator.password.required" datatype="html">
         <source>Password is required</source>
@@ -37,13 +41,15 @@
           <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
           <context context-type="linenumber">17</context>
         </context-group>
+        <target state="final">Password is required</target>
       </trans-unit>
       <trans-unit id="validator.password.minLength" datatype="html">
         <source>The min length is 8</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
-          <context context-type="linenumber">18</context>
+          <context context-type="linenuƒƒmber">18</context>
         </context-group>
+        <target state="final">The min length is 8</target>
       </trans-unit>
       <trans-unit id="validator.password.lowerCaseLetter" datatype="html">
         <source>Password must contain lower case letter</source>
@@ -51,6 +57,7 @@
           <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
           <context context-type="linenumber">19</context>
         </context-group>
+        <target state="final">Password must contain lower case letter</target>
       </trans-unit>
     </body>
   </file>
