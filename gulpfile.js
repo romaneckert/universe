@@ -25,7 +25,7 @@ gulp.task('i18n', (cb) => {
 })
 
 gulp.task('watch', () => {
-    gulp.watch('./web/**/*.pug', gulp.series('pug', 'i18n'));
+    gulp.watch('./web/**/*.pug', gulp.series('pug'));
 });
 
-gulp.task('default', gulp.series('clean', 'pug', 'i18n', 'watch'));
+gulp.task('default', gulp.series('clean', 'pug', 'watch'));
