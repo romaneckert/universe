@@ -12,18 +12,18 @@
                 <target state="final">Home</target>
             </trans-unit>
             <trans-unit id="validator.email.required" datatype="html">
-                <source>Please fill in your email address.</source>
+                <source>Please enter an email address.</source>
                 <context-group purpose="location">
                     <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
                     <context context-type="linenumber">8</context>
                 </context-group>
-                <target state="final">Bitte geben Sie Ihre Emailadresse ein.</target>
+                <target state="final">Bitte geben Sie eine Emailadresse ein.</target>
             </trans-unit>
             <trans-unit id="validator.email.pattern" datatype="html">
                 <source>The email address must contain at least the @ character.</source>
                 <context-group purpose="location">
                     <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
-                    <context context-type="linenumber">9</context>
+                    <context context-type="linenumber">10</context>
                 </context-group>
                 <target state="final">Ihre Emailadresse muss das Zeichen @ enthalten.</target>
             </trans-unit>
@@ -47,33 +47,49 @@
                 <source>Password</source>
                 <context-group purpose="location">
                     <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
-                    <context context-type="linenumber">13</context>
+                    <context context-type="linenumber">14</context>
                 </context-group>
                 <target state="final">Passwort</target>
             </trans-unit>
             <trans-unit id="validator.password.required" datatype="html">
-                <source>Please fill in your password.</source>
+                <source>Please enter a password.</source>
                 <context-group purpose="location">
                     <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
                     <context context-type="linenumber">17</context>
                 </context-group>
-                <target state="translated">Bitte geben Sie ein Passwort ein.</target>
+                <target state="final">Bitte geben Sie ein Passwort ein.</target>
             </trans-unit>
             <trans-unit id="validator.password.minLength" datatype="html">
-                <source>The min length of your password is 8.</source>
+                <source>The minimum length of the password is 8 characters.</source>
                 <context-group purpose="location">
                     <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
                     <context context-type="linenumber">18</context>
                 </context-group>
-                <target state="final">Die Mindestlänge für das Passwort beträgt 8 Zeichen.</target>
+                <target state="final">Die Mindestlänge des Passwortes beträgt 8 Zeichen.</target>
             </trans-unit>
             <trans-unit id="validator.password.lowerCaseLetter" datatype="html">
-                <source>Your password must contain a lower case letter.</source>
+                <source>The password must contain at least one lowercase letter.</source>
                 <context-group purpose="location">
                     <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
                     <context context-type="linenumber">19</context>
                 </context-group>
                 <target state="final">Das Passwort muss mindestens einen Kleinbuchstaben enthalten.</target>
+            </trans-unit>
+            <trans-unit id="validator.password.capitalLetter" datatype="html">
+                <source>The password must contain at least one uppercase letter.</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
+                    <context context-type="linenumber">20</context>
+                </context-group>
+                <target state="final">Das Passwort muss mindestens einen Großbuchstaben enthalten.</target>
+            </trans-unit>
+            <trans-unit id="validator.password.number" datatype="html">
+                <source>The password must contain at least one number.</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
+                    <context context-type="linenumber">21</context>
+                </context-group>
+                <target state="final">Das Passwort muss mindestens eine Nummer enthalten.</target>
             </trans-unit>
         </body>
     </file>

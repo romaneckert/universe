@@ -23,9 +23,7 @@ export class SignUpComponent implements OnInit {
             Validators.pattern("[^ @]*@[^ @]*")
         ]);
         this.password = new FormControl('', [
-            Validators.required,
-            Validators.minLength(8),
-            ValidatePassword,
+            ValidatePassword
         ]);
     }
 

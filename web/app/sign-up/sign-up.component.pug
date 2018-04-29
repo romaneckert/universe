@@ -2,17 +2,17 @@
     form(novalidate '[formGroup]'="signUpForm")
         .form-group('[ngClass]'!="{'has-danger': email.invalid && (email.dirty || email.touched),'has-success': email.valid && (email.dirty || email.touched)}")
             label(i18n="@@general.email") Email
-            input(type="email" class="form-control" formControlName="email" required)
+            input(type="email" class="form-control" formControlName="email")
             .form-control-feedback('*ngIf'!="email.errors && (email.dirty || email.touched)")
-                p('*ngIf'!="email.errors.required" i18n="@@validator.email.required") Please fill in your email address.
-                p('*ngIf'!="email.errors.pattern" i18n="@@validator.email.pattern") The email address must contain at least the @ character.
+                p('*ngIf'="email.errors.required" i18n="@@validator.email.required") Please enter an email address.
+                p('*ngIf'="email.errors.pattern" i18n="@@validator.email.pattern") The email address must contain at least the @ character.
         .form-group('[ngClass]'!="{'has-danger': password.invalid && (password.dirty || password.touched),'has-success': password.valid && (password.dirty || password.touched)}")
             label(i18n="@@general.password") Password
-            input(type="password" class="form-control" formControlName="password" required)
+            input(type="password" class="form-control" formControlName="password")
             .form-control-feedback('*ngIf'!="password.errors && (password.dirty || password.touched)")
-
-                // TODO: add all texts for password validation
-                p('*ngIf'!="password.errors.required" i18n="@@validator.password.required") Please fill in your password.
-                p('*ngIf'!="password.errors.minlength" i18n="@@validator.password.minLength") The min length of your password is 8.
-                p('*ngIf'!="password.errors.lowerCaseLetter" i18n="@@validator.password.lowerCaseLetter") Your password must contain a lower case letter.
+                p('*ngIf'="password.errors.required" i18n="@@validator.password.required") Please enter a password.
+                p('*ngIf'="password.errors.minLength" i18n="@@validator.password.minLength") The minimum length of the password is 8 characters.
+                p('*ngIf'="password.errors.lowerCaseLetter" i18n="@@validator.password.lowerCaseLetter") The password must contain at least one lowercase letter.
+                p('*ngIf'="password.errors.capitalLetter" i18n="@@validator.password.capitalLetter") The password must contain at least one uppercase letter.
+                p('*ngIf'="password.errors.number" i18n="@@validator.password.number") The password must contain at least one number.
                 pre {{password.errors | json}}
