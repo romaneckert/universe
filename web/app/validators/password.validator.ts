@@ -1,6 +1,5 @@
 
 import { AbstractControl } from '@angular/forms';
-import { lowerCase } from '../../../common/validator';
 
 export function ValidatePassword(control: AbstractControl) {
 
