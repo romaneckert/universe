@@ -3,11 +3,23 @@ import { AbstractControl } from '@angular/forms';
 
 export function ValidatePassword(control: AbstractControl) {
 
-    return {
-        required: control.value.length === 0,
-        minLength: control.value.length < 8,
-        lowerCaseLetter: !(new RegExp("^(?=.*[a-z])")).test(control.value),
-        capitalLetter: !(new RegExp("^(?=.*[A-Z])")).test(control.value),
-        number: !(new RegExp("^(?=.*[0-9])")).test(control.value)
+    if (control.value.length === 0) return {
+        required: true
+    };
+
+    if (control.value.length < 8) return {
+        minLength: true
+    };
+
+    if (!(new RegExp("^(?=.*[a-z])")).test(control.value)) return {
+        lowerCaseLetter: true
+    };
+
+    if (!(new RegExp("^(?=.*[A-Z])")).test(control.value)) return {
+        capitalLetter: true
+    };
+
+    if (!(new RegExp("^(?=.*[0-9])")).test(control.value)) return {
+        number: true
     };
 }

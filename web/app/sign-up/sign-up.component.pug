@@ -6,6 +6,7 @@
             .form-control-feedback('*ngIf'!="email.errors && (email.dirty || email.touched)")
                 p('*ngIf'="email.errors.required" i18n="@@validator.email.required") Please enter an email address.
                 p('*ngIf'="email.errors.pattern" i18n="@@validator.email.pattern") The email address must contain at least the @ character.
+                pre {{email.errors | json}}
         .form-group('[ngClass]'!="{'has-danger': password.invalid && (password.dirty || password.touched),'has-success': password.valid && (password.dirty || password.touched)}")
             label(i18n="@@general.password") Password
             input(type="password" class="form-control" formControlName="password")
