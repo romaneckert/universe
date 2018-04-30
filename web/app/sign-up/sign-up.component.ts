@@ -13,11 +13,6 @@ export class SignUpComponent implements OnInit {
     password: FormControl;
 
     ngOnInit() {
-        this.createFormControls();
-        this.createForm();
-    }
-
-    createFormControls() {
         this.email = new FormControl('', [
             Validators.required,
             Validators.pattern("[^ @]*@[^ @]*")
@@ -25,12 +20,16 @@ export class SignUpComponent implements OnInit {
         this.password = new FormControl('', [
             ValidatePassword
         ]);
-    }
-
-    createForm() {
         this.signUpForm = new FormGroup({
             email: this.email,
             password: this.password,
         });
+    }
+
+    onSubmit() {
+        if (this.signUpForm.valid) {
+            console.log("Form Submitted!");
+            this.signUpForm.reset();
+        }
     }
 }

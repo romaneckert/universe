@@ -21,11 +21,11 @@
             </trans-unit>
             <trans-unit id="validator.email.pattern" datatype="html">
                 <source>The email address must contain at least the @ character.</source>
+                <target state="final">Ihre Emailadresse muss das Zeichen @ enthalten.</target>
                 <context-group purpose="location">
                     <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
-                    <context context-type="linenumber">10</context>
+                    <context context-type="linenumber">9</context>
                 </context-group>
-                <target state="final">Ihre Emailadresse muss das Zeichen @ enthalten.</target>
             </trans-unit>
             <trans-unit id="general.imprint" datatype="html">
                 <source>Imprint</source>
@@ -51,45 +51,45 @@
                 </context-group>
                 <target state="final">Passwort</target>
             </trans-unit>
-            <trans-unit id="validator.password.required" datatype="html">
-                <source>Please enter a password.</source>
+            <trans-unit id="validator.password.minLength" datatype="html">
+                <source>The minimum length of the password is 8 characters.</source>
+                <target state="final">Die Mindestlänge des Passwortes beträgt 8 Zeichen.</target>
                 <context-group purpose="location">
                     <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
                     <context context-type="linenumber">17</context>
                 </context-group>
-                <target state="final">Bitte geben Sie ein Passwort ein.</target>
             </trans-unit>
-            <trans-unit id="validator.password.minLength" datatype="html">
-                <source>The minimum length of the password is 8 characters.</source>
+            <trans-unit id="validator.password.lowerCaseLetter" datatype="html">
+                <source>The password must contain at least one lowercase letter.</source>
+                <target state="final">Das Passwort muss mindestens einen Kleinbuchstaben enthalten.</target>
                 <context-group purpose="location">
                     <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
                     <context context-type="linenumber">18</context>
                 </context-group>
-                <target state="final">Die Mindestlänge des Passwortes beträgt 8 Zeichen.</target>
             </trans-unit>
-            <trans-unit id="validator.password.lowerCaseLetter" datatype="html">
-                <source>The password must contain at least one lowercase letter.</source>
+            <trans-unit id="validator.password.capitalLetter" datatype="html">
+                <source>The password must contain at least one uppercase letter.</source>
+                <target state="final">Das Passwort muss mindestens einen Großbuchstaben enthalten.</target>
                 <context-group purpose="location">
                     <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
                     <context context-type="linenumber">19</context>
                 </context-group>
-                <target state="final">Das Passwort muss mindestens einen Kleinbuchstaben enthalten.</target>
             </trans-unit>
-            <trans-unit id="validator.password.capitalLetter" datatype="html">
-                <source>The password must contain at least one uppercase letter.</source>
+            <trans-unit id="validator.password.number" datatype="html">
+                <source>The password must contain at least one number.</source>
+                <target state="final">Das Passwort muss mindestens eine Nummer enthalten.</target>
                 <context-group purpose="location">
                     <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
                     <context context-type="linenumber">20</context>
                 </context-group>
-                <target state="final">Das Passwort muss mindestens einen Großbuchstaben enthalten.</target>
             </trans-unit>
-            <trans-unit id="validator.password.number" datatype="html">
-                <source>The password must contain at least one number.</source>
+            <trans-unit id="general.submit" datatype="html">
+                <source>Submit</source>
                 <context-group purpose="location">
                     <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
-                    <context context-type="linenumber">21</context>
+                    <context context-type="linenumber">24</context>
                 </context-group>
-                <target state="final">Das Passwort muss mindestens eine Nummer enthalten.</target>
+                <target state="final">Absenden</target>
             </trans-unit>
         </body>
     </file>

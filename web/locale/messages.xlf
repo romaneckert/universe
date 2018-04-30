@@ -35,7 +35,7 @@
                 <source>The email address must contain at least the @ character.</source>
                 <context-group purpose="location">
                     <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
-                    <context context-type="linenumber">10</context>
+                    <context context-type="linenumber">9</context>
                 </context-group>
             </trans-unit>
             <trans-unit id="general.password" datatype="html">
@@ -45,39 +45,39 @@
                     <context context-type="linenumber">14</context>
                 </context-group>
             </trans-unit>
-            <trans-unit id="validator.password.required" datatype="html">
-                <source>Please enter a password.</source>
-                <context-group purpose="location">
-                    <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
-                    <context context-type="linenumber">17</context>
-                </context-group>
-            </trans-unit>
             <trans-unit id="validator.password.minLength" datatype="html">
                 <source>The minimum length of the password is 8 characters.</source>
                 <context-group purpose="location">
                     <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
-                    <context context-type="linenumber">18</context>
+                    <context context-type="linenumber">17</context>
                 </context-group>
             </trans-unit>
             <trans-unit id="validator.password.lowerCaseLetter" datatype="html">
                 <source>The password must contain at least one lowercase letter.</source>
                 <context-group purpose="location">
                     <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
-                    <context context-type="linenumber">19</context>
+                    <context context-type="linenumber">18</context>
                 </context-group>
             </trans-unit>
             <trans-unit id="validator.password.capitalLetter" datatype="html">
                 <source>The password must contain at least one uppercase letter.</source>
                 <context-group purpose="location">
                     <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
-                    <context context-type="linenumber">20</context>
+                    <context context-type="linenumber">19</context>
                 </context-group>
             </trans-unit>
             <trans-unit id="validator.password.number" datatype="html">
                 <source>The password must contain at least one number.</source>
                 <context-group purpose="location">
                     <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
-                    <context context-type="linenumber">21</context>
+                    <context context-type="linenumber">20</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="general.submit" datatype="html">
+                <source>Submit</source>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/sign-up/sign-up.component.ts</context>
+                    <context context-type="linenumber">24</context>
                 </context-group>
             </trans-unit>
         </body>

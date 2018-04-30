@@ -1,5 +1,5 @@
 .sign-up sign up
-    form(novalidate '[formGroup]'="signUpForm")
+    form(novalidate '[formGroup]'="signUpForm" '(ngSubmit)'="onSubmit()")
         .form-group('[ngClass]'!="{'has-danger': email.invalid && (email.dirty || email.touched),'has-success': email.valid && (email.dirty || email.touched)}")
             label(i18n="@@general.email") Email
             input(type="email" class="form-control" formControlName="email")
@@ -11,9 +11,10 @@
             label(i18n="@@general.password") Password
             input(type="password" class="form-control" formControlName="password")
             .form-control-feedback('*ngIf'!="password.errors && (password.dirty || password.touched)")
-                p('*ngIf'="password.errors.required" i18n="@@validator.password.required") Please enter a password.
                 p('*ngIf'="password.errors.minLength" i18n="@@validator.password.minLength") The minimum length of the password is 8 characters.
                 p('*ngIf'="password.errors.lowerCaseLetter" i18n="@@validator.password.lowerCaseLetter") The password must contain at least one lowercase letter.
                 p('*ngIf'="password.errors.capitalLetter" i18n="@@validator.password.capitalLetter") The password must contain at least one uppercase letter.
                 p('*ngIf'="password.errors.number" i18n="@@validator.password.number") The password must contain at least one number.
                 pre {{password.errors | json}}
+
+        button(type="submit" class="btn btn-primary" i18n="@@general.submit" '[disabled]'="!signUpForm.valid") Submit
