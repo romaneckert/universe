@@ -2,7 +2,7 @@ const config = require('../config');
 const jwt = require('jsonwebtoken');
 
 exports.addCookie = (user, res) => {
-    let accessToken = jwt.sign(
+    const accessToken = jwt.sign(
         {
             data: {
                 user: {

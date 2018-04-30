@@ -6,7 +6,7 @@ module.exports = {
         roles: ['admin']
     },
     // user routes
-    '/api/user/': {
+    '/api/user/overview': {
         method: 'get',
         controller: require('../controller/user/overview'),
         roles: ['admin', 'user']

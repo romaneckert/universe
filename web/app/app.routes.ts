@@ -1,6 +1,6 @@
 import { Routes } from "@angular/router";
-import { ImprintComponent } from "./imprint/imprint.component";
-import { HomeComponent } from "./home/home.component";
+import { ImprintComponent } from "./components/imprint/imprint.component";
+import { HomeComponent } from "./components/home/home.component";
 
 export const routes: Routes = [
     //{path: '', redirectTo:'library', pathMatch:'full'},

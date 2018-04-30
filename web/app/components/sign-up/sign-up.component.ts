@@ -2,6 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { FormControl, Validators, FormBuilder, FormGroup } from '@angular/forms';
 import { ValidatePassword } from "../../validators/password.validator";
 import { HttpModule, Http } from '@angular/http';
+import { environment } from "../../../environments/environment";
 
 @Component({
     selector: 'app-sign-up',
@@ -12,8 +13,11 @@ export class SignUpComponent implements OnInit {
     signUpForm: FormGroup;
     email: FormControl;
     password: FormControl;
+    apiUrl: String;
 
-    constructor(private http: Http) { }
+    constructor(private http: Http) {
+        this.apiUrl = environment.API_URL;
+    }
 
     ngOnInit() {
         this.email = new FormControl('', [
@@ -35,7 +39,7 @@ export class SignUpComponent implements OnInit {
         this.signUpForm.disable();
 
         this.http.post(
-            '/user/login',
+            this.apiUrl + '/api/user/sign-up/',
             {
                 email: this.email.value,
                 password: this.password.value
@@ -44,7 +48,12 @@ export class SignUpComponent implements OnInit {
     }
 
     handleLoginResponse(res) {
-        console.log(res.json());
-        this.signUpForm.reset();
+        let result = res.json();
+
+        if (result.errors) {
+            console.error(result.errors);
+        } else {
+            this.signUpForm.reset();
+        }
     }
 }

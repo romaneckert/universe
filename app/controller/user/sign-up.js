@@ -1,32 +1,18 @@
 const core = require('../../core');
 
 module.exports = (req, res) => {
-    if (req.body.password !== req.body.passwordRepeat) {
-        return res.render('home/index', {
-            errors: {
-                form: {
-                    signup: {
-                        attributes: {
-                            password: {
-                                message: 'passwords are not the same',
-                                value: ''
-                            },
-                            passwordRepeat: {
-                                message: 'passwords are not the same',
-                                value: ''
-                            }
-                        }
-                    }
-                }
-            }
-        });
-    }
+
+    console.log(req.body.password);
 
     core.service.bcrypt.hash(req.body.password, 10, (err, hash) => {
 
         if (err) {
             console.log(err);
-            return res.redirect('/');
+            return res.json({
+                errors: {
+                    hashPassword: true
+                }
+            });
         }
 
         var user = new core.model.user({
@@ -37,18 +23,16 @@ module.exports = (req, res) => {
 
         user.save((err) => {
             if (err) {
-                return res.render('home/index', {
+                return res.json({
                     errors: {
-                        form: {
-                            signup: {
-                                errors: err.errors
-                            }
-                        }
+                        saveUser: true
                     }
                 });
             }
             core.service.accessToken.addCookie(user, res);
-            return res.redirect('/user/overview/');
+            return res.json({
+                errors: {}
+            });
         });
     });
 }

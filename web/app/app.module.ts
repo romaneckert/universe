@@ -10,10 +10,12 @@ import { ImprintComponent } from './components/imprint/imprint.component';
 import { HomeComponent } from './components/home/home.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
     imports: [
         BrowserModule,
+        HttpModule,
         FormsModule,
         ReactiveFormsModule,
         RouterModule.forRoot(routes)

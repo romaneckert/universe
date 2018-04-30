@@ -10,3 +10,6 @@ npm run build
 
 ### build translation files
 npm run i18n
+
+### start webserver
+app/index.js

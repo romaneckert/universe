@@ -1,3 +1,5 @@
 module.exports = (req, res) => {
-    res.render('user/overview');
+    res.json({
+        user: {}
+    });
 };

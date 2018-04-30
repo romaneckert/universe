@@ -28,14 +28,14 @@ app.use(compression());
 // activate helmet
 app.use(helmet());
 
+// serve static files
+app.use(express.static(__dirname + '/../public'));
+
 // parse cookies
 app.use(cookies());
 
 // body parser
 app.use(bodyParser.urlencoded({ extended: false }));
-
-// serve static files
-app.use(express.static(__dirname + '/../public'));
 
 // authentification
 app.use(auth);
